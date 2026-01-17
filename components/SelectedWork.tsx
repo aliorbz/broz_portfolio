@@ -58,10 +58,10 @@ const projects = [
 
 const SelectedWork: React.FC = () => {
   return (
-    <section className="scroll-reveal bg-white rounded-[2.5rem] sm:rounded-[3.5rem] p-6 sm:p-12 lg:px-20 lg:py-16">
+    <section className="scroll-reveal bg-white rounded-[2.5rem] sm:rounded-[3.5rem] p-6 sm:p-12 lg:px-20 lg:py-16 overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4">
-        {/* Left Header Sidebar - Adjusted padding and width to pull title left */}
-        <div className="lg:col-span-4 flex flex-col items-start gap-5 lg:sticky lg:top-32 h-fit pt-2 lg:-ml-12">
+        {/* Left Header Sidebar - Removed negative margin on mobile to prevent overflow */}
+        <div className="lg:col-span-4 flex flex-col items-start gap-5 lg:sticky lg:top-32 h-fit pt-2 lg:-ml-8 xl:-ml-12">
           <h2 className="text-5xl lg:text-[72px] font-black text-[#1a1a1a] leading-[0.9] tracking-tighter">
             Selected<br />work
           </h2>
@@ -70,14 +70,13 @@ const SelectedWork: React.FC = () => {
           </button>
         </div>
 
-        {/* Right Project Grid - Shrink to accommodate wider title area */}
+        {/* Right Project Grid */}
         <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-12">
           {projects.map((project) => (
             <div 
               key={project.id} 
               className={`${project.fullWidth ? 'md:col-span-2' : 'md:col-span-1'} group flex flex-col`}
             >
-              {/* Image Container */}
               <div className="rounded-[2.5rem] overflow-hidden mb-5 bg-[#f5f5f5] aspect-[16/10] sm:aspect-auto">
                 <img 
                   src={project.image} 
@@ -86,7 +85,6 @@ const SelectedWork: React.FC = () => {
                 />
               </div>
 
-              {/* Info Bar */}
               <div className="flex justify-between items-center px-1 mb-3.5">
                 <h3 className="text-[15px] font-bold text-[#1a1a1a] tracking-tight uppercase">
                   {project.title}
@@ -96,7 +94,6 @@ const SelectedWork: React.FC = () => {
                 </span>
               </div>
 
-              {/* Tags */}
               <div className="flex flex-wrap gap-2 px-0.5">
                 {project.tags.map((tag) => (
                   <span 

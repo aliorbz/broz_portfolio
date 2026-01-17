@@ -3,7 +3,7 @@ import React from 'react';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bento-card bg-red-600 flex items-center justify-between px-6 sm:px-8 py-2.5 sm:py-3 sticky-nav shadow-2xl border-none mx-auto w-full">
+    <nav className="bento-card bg-[#ff4e46] flex items-center justify-between px-6 sm:px-8 py-2.5 sm:py-3 sticky-nav shadow-2xl border-none mx-auto w-full">
       <div className="flex items-center gap-2.5">
         <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center overflow-hidden">
           <img 
@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
             className="w-full h-full object-contain"
           />
         </div>
-        <span className="font-black tracking-tighter text-black text-base sm:text-lg">ALPHABROZ.dev</span>
+        <span className="font-black tracking-tighter text-black text-base sm:text-lg">BROZ.dev</span>
       </div>
       <button className="bg-black text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-full font-black text-xs sm:text-sm hover:bg-gray-900 transition-all hover:scale-105 active:scale-95 shadow-md border border-black/10 whitespace-nowrap">
         Book a call
