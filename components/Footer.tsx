@@ -5,11 +5,13 @@ const Footer: React.FC = () => {
   return (
     <footer className="py-8 space-y-4 scroll-reveal">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <div className="lg:col-span-5 bento-card p-10 sm:p-16 flex flex-col justify-between min-h-[350px]">
-          <h2 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85] mb-12 text-[#1a1a1a]">Let's connect and chat</h2>
-          <div className="flex items-center gap-4 group cursor-pointer w-fit">
-            <span className="text-xl sm:text-2xl font-black border-b-4 border-black transition-all group-hover:text-indigo-600 group-hover:border-indigo-600">HELLO@ALPHABROZ.DEV</span>
-            <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center rotate-45 group-hover:rotate-0 transition-transform shadow-lg group-hover:bg-indigo-600">
+        <div className="lg:col-span-5 bento-card p-8 sm:p-16 flex flex-col justify-between min-h-[350px]">
+          <h2 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85] mb-10 text-[#1a1a1a]">Let's connect and chat</h2>
+          <div className="flex items-center gap-3 sm:gap-4 group cursor-pointer w-fit max-w-full">
+            <span className="text-base sm:text-xl lg:text-2xl font-black border-b-2 sm:border-b-4 border-black transition-all group-hover:text-indigo-600 group-hover:border-indigo-600 break-all uppercase">
+              HELLO@ALPHABROZ.DEV
+            </span>
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-900 text-white rounded-full flex-shrink-0 flex items-center justify-center rotate-45 group-hover:rotate-0 transition-transform shadow-lg group-hover:bg-indigo-600">
               →
             </div>
           </div>
@@ -43,7 +45,7 @@ const Footer: React.FC = () => {
           <div className="w-8 h-8 rounded-full border-4 border-gray-900 flex items-center justify-center font-black text-xs">A</div>
           <span className="font-black tracking-tighter text-gray-800 text-sm">BROZ.dev</span>
         </div>
-        <div className="text-gray-400 font-bold text-sm tracking-widest uppercase">© HEAVENLY DESIGN 2026</div>
+        <div className="text-gray-400 font-bold text-sm tracking-widest uppercase text-center">© HEAVENLY DESIGN 2026</div>
         <div className="flex gap-8">
            <a href="#" className="text-gray-400 hover:text-black font-bold text-xs uppercase transition-colors">Privacy</a>
            <a href="#" className="text-gray-400 hover:text-black font-bold text-xs uppercase transition-colors">Terms</a>
