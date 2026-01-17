@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 const App: React.FC = () => {
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.1,
+      threshold: 0.05, // Slightly lower threshold for smoother triggers
       rootMargin: "0px 0px -50px 0px"
     };
 
@@ -31,7 +31,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-4 sm:space-y-6 overflow-x-hidden relative">
+    <div className="min-h-screen max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-4 sm:space-y-6 relative">
       <Navbar />
       <Hero />
       <Mission />
