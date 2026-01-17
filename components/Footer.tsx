@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="lg:col-span-5 bento-card p-8 sm:p-16 flex flex-col justify-between min-h-[350px]">
           <h2 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85] mb-10 text-[#1a1a1a]">Let's connect and chat</h2>
           <div className="flex items-center gap-3 sm:gap-4 group cursor-pointer w-fit max-w-full">
-            <span className="text-base sm:text-xl lg:text-2xl font-black border-b-2 sm:border-b-4 border-black transition-all group-hover:text-indigo-600 group-hover:border-indigo-600 break-all uppercase">
+            <span className="text-base sm:text-xl lg:text-2xl font-black border-b-2 sm:border-b-4 border-black transition-all group-hover:text-indigo-600 group-hover:border-indigo-600 break-all uppercase text-black">
               HELLO@ALPHABROZ.DEV
             </span>
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-900 text-white rounded-full flex-shrink-0 flex items-center justify-center rotate-45 group-hover:rotate-0 transition-transform shadow-lg group-hover:bg-indigo-600">

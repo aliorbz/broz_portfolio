@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-[#1a1a1a] leading-[0.9] tracking-tighter mb-6 sm:mb-8">
           Hi, I'm a product designer<span className="text-2xl sm:text-4xl align-top ml-1">©</span>
         </h1>
-        <p className="text-gray-500 text-base sm:text-xl max-w-md mb-8 leading-relaxed">
+        <p className="text-black text-base sm:text-xl max-w-md mb-8 leading-relaxed font-medium">
           I have 11 years of experience working on useful and mindful products together with startups and known brands.
         </p>
         <button className="bg-[#1a1a1a] text-white w-full sm:w-fit px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95">
@@ -23,16 +23,15 @@ const Hero: React.FC = () => {
 
       {/* Right Visual Part */}
       <div className="lg:col-span-5 grid grid-cols-1 gap-4">
-        {/* Changed grid-cols-1 to grid-cols-2 for mobile */}
         <div className="grid grid-cols-2 gap-4">
           <div className="bento-card p-4 sm:p-6 flex flex-col justify-between overflow-hidden relative min-h-[180px]">
              <div className="z-10">
-                <h3 className="font-bold text-sm sm:text-xl leading-tight">ALPHABROZ</h3>
-                <p className="text-gray-400 text-[10px] sm:text-sm">World Wide</p>
+                <h3 className="font-bold text-sm sm:text-xl leading-tight text-black">ALPHABROZ</h3>
+                <p className="text-black/60 text-[10px] sm:text-sm font-semibold">World Wide</p>
              </div>
              <img src="https://picsum.photos/seed/ui/400/300" className="absolute -bottom-4 -right-4 w-24 h-24 sm:w-40 sm:h-40 object-cover rounded-xl rotate-12 opacity-80" />
              <div className="mt-auto z-10">
-                <div className="bg-gray-100 p-1.5 rounded-lg text-[8px] sm:text-[10px] font-bold inline-flex items-center gap-1 w-fit mb-1 sm:mb-2">
+                <div className="bg-gray-100 p-1.5 rounded-lg text-[8px] sm:text-[10px] font-bold inline-flex items-center gap-1 w-fit mb-1 sm:mb-2 text-black">
                     <span>⚡ EXPERT</span>
                 </div>
                 <div className="text-blue-600 font-extrabold text-[10px] sm:text-sm">$150/HR</div>
@@ -43,7 +42,6 @@ const Hero: React.FC = () => {
           </div>
         </div>
         
-        {/* Changed grid-cols-1 to grid-cols-2 for mobile */}
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-gradient-to-br from-[#8E9EFF] to-[#A8B5FF] rounded-[1.5rem] sm:rounded-[2rem] p-4 sm:p-6 text-white flex flex-col justify-between min-h-[160px]">
             <div>

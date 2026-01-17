@@ -37,7 +37,6 @@ const Services: React.FC = () => {
             How Can I Assist You?
           </h2>
         </div>
-        {/* Force grid-cols-2 on mobile */}
         <div className="lg:col-span-8 grid grid-cols-2 gap-3 sm:gap-4">
           {services.map((service) => (
             <div key={service.number} className="bento-card p-4 sm:p-10 flex flex-col justify-between min-h-[220px] sm:min-h-[350px]">
@@ -45,11 +44,11 @@ const Services: React.FC = () => {
                  <div className="w-10 h-10 sm:w-14 sm:h-14 bg-gray-50 rounded-xl sm:rounded-2xl flex items-center justify-center text-xl sm:text-3xl shadow-sm">
                    {service.icon}
                  </div>
-                 <span className="text-gray-100 font-black text-2xl sm:text-4xl leading-none">{service.number}</span>
+                 <span className="text-black/20 font-black text-2xl sm:text-4xl leading-none">{service.number}</span>
               </div>
               <div>
-                <h3 className="text-lg sm:text-3xl font-black mb-1 sm:mb-4 tracking-tight">{service.title}</h3>
-                <p className="text-gray-500 text-[10px] sm:text-sm leading-relaxed font-medium line-clamp-2 sm:line-clamp-none">{service.desc}</p>
+                <h3 className="text-lg sm:text-3xl font-black mb-1 sm:mb-4 tracking-tight text-black">{service.title}</h3>
+                <p className="text-black/70 text-[10px] sm:text-sm leading-relaxed font-bold line-clamp-2 sm:line-clamp-none">{service.desc}</p>
               </div>
             </div>
           ))}
