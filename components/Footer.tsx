@@ -5,19 +5,19 @@ const Footer: React.FC = () => {
   return (
     <footer className="py-8 space-y-4 scroll-reveal">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
-        <div className="lg:col-span-5 bento-card p-8 sm:p-16 flex flex-col justify-between min-h-[350px]">
+        <div className="lg:col-span-6 bento-card p-8 sm:p-16 flex flex-col justify-between min-h-[350px]">
           <h2 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85] mb-10 text-[#1a1a1a]">Let's connect and chat</h2>
-          <div className="flex items-center gap-3 sm:gap-4 group cursor-pointer w-fit max-w-full">
-            <span className="text-base sm:text-xl lg:text-2xl font-black border-b-2 sm:border-b-4 border-black transition-all group-hover:text-indigo-600 group-hover:border-indigo-600 break-all uppercase text-black">
+          <div className="flex items-center gap-2 sm:gap-4 group cursor-pointer w-fit max-w-full">
+            <span className="text-sm sm:text-lg lg:text-xl xl:text-2xl font-black border-b-2 sm:border-b-4 border-black transition-all group-hover:text-indigo-600 group-hover:border-indigo-600 whitespace-nowrap uppercase text-black">
               HELLO@ALPHABROZ.DEV
             </span>
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-900 text-white rounded-full flex-shrink-0 flex items-center justify-center rotate-45 group-hover:rotate-0 transition-transform shadow-lg group-hover:bg-indigo-600">
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-gray-900 text-white rounded-full flex-shrink-0 flex items-center justify-center rotate-45 group-hover:rotate-0 transition-transform shadow-lg group-hover:bg-indigo-600">
               →
             </div>
           </div>
         </div>
         
-        <div className="lg:col-span-7 bg-[#2D9B9B] rounded-[2.5rem] sm:rounded-[3rem] p-10 sm:p-16 flex flex-col items-center justify-center relative overflow-hidden min-h-[400px]">
+        <div className="lg:col-span-6 bg-[#2D9B9B] rounded-[2.5rem] sm:rounded-[3rem] p-10 sm:p-16 flex flex-col items-center justify-center relative overflow-hidden min-h-[400px]">
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-xl relative z-10">
             {[
               { text: 'FOLLOW ME!', classes: 'bg-white/10 text-white border border-white/20' },
