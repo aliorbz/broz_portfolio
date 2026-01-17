@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cozydiadora | Product Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ALPHABROZ.dev | Product Designer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,7 @@
             scroll-behavior: smooth;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
+            padding-top: env(safe-area-inset-top);
         }
         .bento-card {
             background: white;
@@ -43,6 +44,13 @@
         .scroll-reveal.visible {
             opacity: 1;
             transform: translateY(0) scale(1);
+        }
+        /* Fix for sticky navbar on mobile */
+        .sticky-nav {
+            position: sticky;
+            top: max(1rem, env(safe-area-inset-top));
+            z-index: 100;
+            margin-bottom: 1.5rem;
         }
         /* Custom scrollbar */
         ::-webkit-scrollbar {
