@@ -57,21 +57,21 @@ const projects = [
 const SelectedWork: React.FC = () => {
   return (
     <section className="scroll-reveal bg-white rounded-[2.5rem] sm:rounded-[3.5rem] p-6 sm:p-12 lg:px-16 lg:py-16 overflow-visible">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 relative items-start">
-        {/* Left Column - Slightly narrower and title font size reduced */}
-        <div className="lg:col-span-4 flex flex-col items-start gap-4 lg:sticky lg:top-40 h-fit pt-0">
-          <div className="max-w-full lg:max-w-[300px]">
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#1a1a1a] leading-[0.95] tracking-tighter mb-4">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 relative items-start">
+        {/* Left Column - Reduced font size and width to prevent overlap */}
+        <div className="lg:col-span-3 flex flex-col items-start gap-4 lg:sticky lg:top-40 h-fit pt-0">
+          <div className="max-w-full">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1a1a1a] leading-[0.95] tracking-tighter mb-4">
               Achievements
             </h2>
             <p className="text-black font-bold text-sm sm:text-base leading-snug opacity-70">
-              Explore my Achievemens on this web3 space...
+              Explore my Achievements on this web3 space...
             </p>
           </div>
         </div>
 
-        {/* Right Column - Using col-span-8 to push it further away from the title */}
-        <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+        {/* Right Column - Increased span to give title more room */}
+        <div className="lg:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
           {projects.map((project) => (
             <div 
               key={project.id} 
