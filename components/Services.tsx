@@ -3,28 +3,28 @@ import React from 'react';
 
 const services = [
   {
-    title: 'UI Design',
+    title: 'Analysis',
     number: '01',
-    desc: 'Intuitive, visually appealing interfaces.',
-    icon: '💎'
+    desc: 'Understanding and adopting.',
+    icon: '📊'
   },
   {
-    title: 'Dev',
+    title: 'Content',
     number: '02',
-    desc: 'Reliable, scalable clean code.',
-    icon: '⚡'
+    desc: 'Simplifying complex ideas into insights.',
+    icon: '✍️'
   },
   {
-    title: 'Graphic',
+    title: 'Building',
     number: '03',
-    desc: 'Responsive user-friendly designs.',
-    icon: '🎨'
+    desc: 'Contributing while managing communities.',
+    icon: '🏗️'
   },
   {
-    title: 'Branding',
+    title: 'Strategy',
     number: '04',
-    desc: 'Memorable brand identities.',
-    icon: '✨'
+    desc: 'Assessing projects for lasting value.',
+    icon: '🎯'
   }
 ];
 
