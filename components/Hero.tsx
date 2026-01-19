@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           <span className="w-1.5 h-1.5 rounded-full bg-[#2D9B9B] animate-pulse"></span>
           AVAILABLE FOR WORK
         </div>
-        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-[#1a1a1a] leading-[0.9] tracking-tighter mb-6 sm:mb-8">
+        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-[#1a1a1a] leading-[1.1] sm:leading-[0.9] tracking-tighter mb-6 sm:mb-8">
           Hi, I'm KAMRUL<span className="text-2xl sm:text-4xl align-top ml-1">©</span>
         </h1>
         <p className="text-black text-base sm:text-xl max-w-md mb-8 leading-relaxed font-medium">
