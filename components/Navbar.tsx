@@ -14,9 +14,14 @@ const Navbar: React.FC = () => {
         </div>
         <span className="font-black tracking-tight text-black text-base sm:text-lg">BROZFOLIO</span>
       </div>
-      <button className="bg-black text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-full font-black text-xs sm:text-sm hover:bg-gray-900 transition-all hover:scale-105 active:scale-95 shadow-md border border-black/10 whitespace-nowrap">
-        Contact
-      </button>
+      <a 
+        href="https://alphabrozdao.vercel.app/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="bg-black text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-full font-black text-xs sm:text-sm hover:bg-gray-900 transition-all hover:scale-105 active:scale-95 shadow-md border border-black/10 whitespace-nowrap inline-block"
+      >
+        Visit
+      </a>
     </nav>
   );
 };

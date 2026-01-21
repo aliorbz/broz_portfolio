@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   const socialIcons = [
-    { name: 'x', domain: 'x.com' },
+    { name: 'x', domain: 'x.com', url: 'https://x.com/kamrulbroz' },
     { name: 'linkedin', domain: 'linkedin.com' },
     { name: 'telegram', domain: 't.me' },
     { name: 'discord', domain: 'discord.com' },
@@ -25,9 +25,12 @@ const Hero: React.FC = () => {
         <p className="text-black text-base sm:text-xl max-w-md mb-8 leading-relaxed font-medium">
           I actively study and engage with the Web3 ecosystem, with a strong focus on understanding how different protocols, products, and communities evolve.
         </p>
-        <button className="bg-[#1a1a1a] text-white w-full sm:w-fit px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95">
+        <a 
+          href="#contact" 
+          className="bg-[#1a1a1a] text-white w-full sm:w-fit px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95 text-center block"
+        >
           Contact Me
-        </button>
+        </a>
       </div>
 
       {/* Right Visual Part */}
@@ -76,13 +79,19 @@ const Hero: React.FC = () => {
           </div>
           <div className="bento-card p-3 sm:p-6 grid grid-cols-3 gap-2 sm:gap-3 place-items-center !bg-[#fcfbf7]">
             {socialIcons.map((icon) => (
-              <div key={icon.name} className="w-full aspect-square bg-gray-50/50 rounded-xl sm:rounded-2xl flex items-center justify-center hover:bg-gray-100 cursor-pointer transition-colors group border border-black/5">
+              <a 
+                key={icon.name} 
+                href={icon.url || "#"} 
+                target={icon.url ? "_blank" : undefined}
+                rel={icon.url ? "noopener noreferrer" : undefined}
+                className="w-full aspect-square bg-gray-50/50 rounded-xl sm:rounded-2xl flex items-center justify-center hover:bg-gray-100 cursor-pointer transition-colors group border border-black/5"
+              >
                 <img 
                   src={`https://www.google.com/s2/favicons?domain=${icon.domain}&sz=128`} 
                   className="w-5 h-5 sm:w-8 sm:h-8 grayscale group-hover:grayscale-0 transition-all" 
                   alt={`${icon.name} icon`}
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>
