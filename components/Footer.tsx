@@ -26,9 +26,9 @@ const Footer: React.FC = () => {
               { text: 'FOLLOW ME!', classes: 'bg-black text-white border border-black rotate-[2deg]', url: 'https://x.com/kamrulbroz' },
               { text: 'INSTAGRAM', classes: 'bg-white text-black rotate-[-6deg]' },
               { text: 'COMMUNITY', classes: 'bg-black text-white rotate-[4deg]', url: 'https://alphabrozdao.vercel.app/' },
-              { text: 'TELEGRAM', classes: 'bg-white text-black rotate-[-3deg]' },
+              { text: 'TELEGRAM', classes: 'bg-white text-black rotate-[-3deg]', url: 'https://t.me/kamrulbroz' },
               { text: 'LINKEDIN', classes: 'bg-black text-white rotate-[8deg]' },
-              { text: 'DISCORD', classes: 'bg-white text-black rotate-[-2deg]' },
+              { text: 'DISCORD', classes: 'bg-white text-black rotate-[-2deg]', url: 'https://discord.com/users/1304852598993719329' },
             ].map((bubble, i) => {
               const Component = bubble.url ? 'a' : 'div';
               return (

@@ -5,10 +5,10 @@ const Hero: React.FC = () => {
   const socialIcons = [
     { name: 'x', domain: 'x.com', url: 'https://x.com/kamrulbroz' },
     { name: 'linkedin', domain: 'linkedin.com' },
-    { name: 'telegram', domain: 't.me' },
-    { name: 'discord', domain: 'discord.com' },
+    { name: 'telegram', domain: 't.me', url: 'https://t.me/kamrulbroz' },
+    { name: 'discord', domain: 'discord.com', url: 'https://discord.com/users/1304852598993719329' },
     { name: 'facebook', domain: 'facebook.com' },
-    { name: 'github', domain: 'github.com' }
+    { name: 'github', domain: 'github.com', url: 'https://github.com/kamrulbroz' }
   ];
 
   return (
